@@ -1,2 +1,2 @@
 # tripplesee
-[A Company Website],(www.tripplesee.com) 
+[A Company Website](www.tripplesee.com) 
