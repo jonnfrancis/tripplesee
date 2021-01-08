@@ -1,0 +1,298 @@
+html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
+body { background: #F3EFE0; font-size: 15px; line-height: 1.64; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b { font-family: 'Open Sans', sans-serif !important; margin-bottom: 20px; }
+h1,h4 { font-weight: 700; margin-bottom: 10px; }
+h2,h3 { font-weight: 300; color: #22A39F; }
+h2 { font-size: 54px; text-align: center; }
+h3 { font-size: 28px; }
+
+.experience row{
+	background-color:lightgray;
+}
+p.lead { text-align: center; color: #727878; }
+p.lead a { color: #FFFFFF; text-decoration: underline; }
+p.lead a:hover { text-decoration: none; }
+ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
+hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
+.jumbotron {
+	background: no-repeat center right fixed url(../static/flames.jpg);
+
+	-webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/flames.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/flames.jpg', sizingMethod='scale');
+
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.background-white { background: #FFFFFF; }
+.background-gray { background: #434242; }
+/*.container { max-width: 1280px; padding: 40px 180px; }
+*/
+#profile .row > div { margin-bottom: 20px; }
+#profile .row > div img { width: 100%; max-width: 246px; height: auto; }
+
+#experiences .experience { margin-bottom: 20px; }
+#experiences .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
+#experiences .experience .experience-details { display: block; margin-top: 6px; }
+#experiences .experience .experience-details * { color: #22A39F; }
+#experiences .experience .experience-details .seperator { color: #BCBCBC; }
+div.gallery {
+border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.responsive{
+		background-color:lightgray;
+
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+/*
+.active {
+	background-color: #717171;
+}*/
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.text {font-size: 11px}
+}
+.nav{
+	height:50px;
+	background:lightgray;
+}
+.nav div{
+  display:inline-block;
+	position:absolute;
+	left:0;
+	padding:15px;
+	font-size:20px;
+	color:white;
+}
+.nav ul{
+	position:absolute;
+	right:5px;
+}
+.nav ul li{
+	display:inline-block;
+}
+.nav ul li a{
+	color:white;
+	padding:5px;
+}.social-icons {
+	text-align: center;
+
+	}
+.social-icons li {
+	display:inline-block;
+	list-style-type:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	}
+.social-icons li a {
+	border-bottom: none;
+	}
+.social-icons li img {
+	width:70px;
+	height:70px;
+	margin-right: 20px;
+}
+@media (max-width: 1200px) {
+	#interests .interest-content { padding: 20px 0px; }
+}
+
+@media (max-width: 767px) {
+	.jumbotron:before {
+		bottom: 100px;
+		left: 20px;
+		right: 20px;
+		top: 20px;
+	}
+	.jumbotron .container { top: 20%; padding-top: 0px; }
+	.jumbotron .scroll-down { width: 100%; right: 0px; }
+
+
+	.container { padding: 60px 20px; min-width: 280px; }
+	.hidden-phone { display: none; }
+
+	#profile .row * { text-align: center; }
+
+	#experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
+	#experiences .experience .experience-details .seperator { display: none; }
+
+	#interests .left { float: none; }
+	#interests .right { float: none; }
+
+	#interests > * { text-align: center; }
+	#interests img { width: 50%; height: auto; float: none !important; }
+	#interests .interest-content { padding: 20px 0px; }
+
+	#contact { padding-bottom: 60px; }
+	#contact a .icon { float: left; margin-right: 10px; }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 767px)  {
+    .jumbotron {
+      -webkit-background-size: auto 150%;
+      background-attachment: scroll;
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 767px)  {
+
+    .jumbotron {
+      -webkit-background-size: 150% auto;
+      background-attachment: scroll;
+    }
+
+	.jumbotron .lead { display: none; }
+}
+
+@keyframes wiggle {
+	0% {
+		padding-top: 20px;
+	}
+
+	50% {
+		padding-top: 28px;
+	}
+
+	100% {
+		padding-top: 20px;
+	}
+}
+.numbertext{
+	font-family:sofia;
+	color:black;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
