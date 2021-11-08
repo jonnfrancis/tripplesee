@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+
+
+ <head>
+     <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- https://favicon.io/emoji-favicons/money-mouth-face/ -->
+        <link href="./static/Ts.ico" rel="icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="./css/responsive.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+        
+
+        <title>Tripple See:Contact </title>
+
+
+    <style>
+
+    body{
+        height:100vh;
+        width:100%;
+        background-size:cover;
+        padding-left:5%;
+        padding-right:5%;
+        box-sizing:border-box;
+        position:relative;
+
+    }
+    .content h1{
+        font-size:60px;
+        font-weight:100;
+        margin-top:24px;
+        margin-bottom:15px;
+        color:#232660;
+
+
+    }
+    .content p{
+        font-size:20px;
+        color:#6a7199;
+
+    }
+    .content{
+        margin-left:10%;
+        margin-top:10%;
+
+    }
+
+    .arrow-icons{
+        margin-top:40px;
+        display:flex;
+
+    }
+    .arrow-icons img{
+        width:40px;
+        margin-right:25px;
+    }
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"poppins",sans-serif;
+}
+section{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#112d42;
+}
+section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background:#03a9f4;
+}
+section .containor{
+    position:relative;
+    min-width:1100px;
+    min-height:550px;
+    display:flex;
+    z-index:1000;
+
+}
+section .containor .contactinfo{
+    position:absolute;
+    top:40px;
+    width:350px;
+    height:calc(100%-80px);
+    background:#0f3959;
+    z-index:1;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow:0px 20px 20px rgba(0,0,0,0.2);
+}
+section .containor .contactinfo h2{
+    color:#fff;
+    font-size:24px;
+    font-weight:500;
+}
+section .containor .contactinfo .info{
+    position:relative;
+    margin:20px 0;
+}
+section .containor .contactinfo .info li{
+    position:relative;
+    list-style:none;
+    display:flex;
+    margin:20px 0;
+    cursor:pointer;
+    align-items:flex-start;
+
+}
+section .containor .contactinfo .info li span:nth-child(1) {
+    width:30px;
+    min-width:30px;
+
+
+}
+section .containor .contactinfo .info li span:nth-child(1) img{
+    max-width:100%;
+    filter:invert(1);
+    opacity:0.5;
+}
+section .containor .contactinfo .info li span:nth-child(2) {
+    color:#fff;
+    margin-left:10px;
+    font-weight:300;
+    opacity:0.5;
+
+}
+section .containor .contactinfo .info li:hover span:nth-child(1) img,
+section .containor .contactinfo .info li:hover span:nth-child(2){
+    opacity:1;
+}
+section .containor .contactinfo .sci{
+    position:relative;
+    display:flex;
+
+}
+section .containor .contactinfo .sci li{
+    list-style:none;
+    margin-right:15px;
+}
+section .containor .contactinfo .sci li a{
+    text-decoration:none;
+
+}
+section .containor .contactinfo .sci li a img{
+    filter:invert(1);
+    opacity:0.5;
+
+}
+section .containor .contactinfo .sci li:hover a img{
+    opacity:1;
+
+}
+section .containor .contactForm{
+    position:absolute;
+    padding:70px 50px;
+    background:#fff;
+    margin-left:150px;
+    padding-left:250px;
+    width:calc(100%-150px);
+    height:100%;
+    box-shadow:0px 50px 50px rgba(0,0,0,0.5);
+}
+section .containor .contactForm h2{
+    color:#0f3959;
+    font-size:24px;
+    font-weight:500;
+}
+section .containor .contactForm .formBox form{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding-top:30px;
+
+}
+section .containor .contactForm .formBox form .inputBox{
+    position:relative;
+    margin:0 0 35px 0;
+
+}
+section .containor .contactForm .formBox form .inputBox.w50{
+    width:47%;
+}
+section .containor .contactForm .formBox form .inputBox.w100{
+    width:100%;
+}
+section .containor .contactForm .formBox form .inputBox input,
+section .containor .contactForm .formBox form .inputBox textarea{
+    width:100%;
+    padding:5px 0;
+    resize:none;
+    font-size:18px;
+    font-weight:300;
+    color:#333;
+    border:none;
+    border-bottom:1px solid #777;
+    outline:none;
+}
+section .containor .contactForm .formBox form .inputBox textarea{
+    min-height:120px;
+}
+section .containor .contactForm .formBox form .inputBox span{
+    position:absolute;
+    left:0;
+    padding:5px 0;
+    resize:none;
+    font-size:18px;
+    font-weight:300;
+    color:#333;
+    transition:0.3s;
+    pointer-events:none;
+
+
+}
+section .containor .contactForm .formBox form .inputBox input:focus~ span,
+section .containor .contactForm .formBox form .inputBox textarea:focus~ span,
+section .containor .contactForm .formBox form .inputBox input:valid~ span,
+section .containor .contactForm .formBox form .inputBox textarea:valid~ span{
+    transform:translateY(-20px);
+    font-size:12px;
+    font-weight:400;
+    letter-spacing:1px;
+    color:#ff568c;
+
+}
+section .containor .contactForm .formBox form .inputBox input[type='submit']{
+    position:relative;
+    cursor:pointer;
+    background:#0f3959;
+    color:#fff;
+    border:none;
+    max-width:150px;
+    padding:12px;
+}
+section .containor .contactForm .formBox form .inputBox input[type='submit']:hover{
+    background:#ff568c;
+}
+.btn{
+    display:inline-block;
+    background:linear-gradient(45deg,#87adfe,#ff77cd);
+    border-radius:6px;
+    padding:10px 20px;
+    box-sizing:border-box;
+    text-decoration:none;
+    color:#fff;
+    box-shadow:3px 8px 22px rgba(94,28,68,0.15);
+    margin-top:24px;
+    margin-bottom:15px;
+}
+.modal-body{
+    font-family:sofia;
+    font-weight:300;
+    font-size:46px;
+    color:#45b6ff;
+}
+
+
+   </style>
+ </head>
+
+ <body>
+         <nav class="navbar navbar-expand-md navbar-light bg-light border">
+            <a target="_blank" href="index.html"><img src="./static/Ts.ico" alt="b"></a>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto mt-2">
+                         <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="contact.html">Contact us</a>
+          <a class="dropdown-item" href="faq.html">Frequently Asked Questions</a>
+        </div>
+      </li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">Faq</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+                    </ul>
+
+            </div>
+        </nav>
+             <!-- Button trigger modal -->
+<button type="button"  class="btn" data-toggle="modal" data-target="#exampleModal">
+  Click here!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hi there,<br> if you have questions about any of our products and services <br>contact us.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+             <div class="content">
+                 <h1>Contact  <br>Us</h1>
+                 <p>Reach out to us</p>
+
+                 <div class="arrow-icons">
+                     <img src="./static/back-arrow.png" >
+                     <img src="./static/next-arrow.png" >
+             </div>
+
+
+             </div>
+             <section>
+                 <div class="containor">
+                 <div class="contactinfo">
+                     <div>
+                         <h2>Contact Info</h2>
+                         <ul class="info">
+                             <li>
+                             <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M8 3C6.34 3 5 4.352 5 6s1.34 3 3 3 3-1.352 3-3-1.34-3-3-3zm0 1c1.116 0 2 .89 2 2 0 1.11-.884 2-2 2s-2-.89-2-2c0-1.11.884-2 2-2zm0-4C4.692 0 2 2.692 2 6c0 6.262 5.72 9.906 5.72 9.906.163.112.397.112.56 0 0 0 5.72-3.686 5.72-9.906 0-3.308-2.692-6-6-6zm0 1c2.767 0 5 2.232 5 5 0 5.308-4.506 8.472-5 8.813-.497-.34-5-3.463-5-8.813 0-2.768 2.233-5 5-5z"/></svg></span>
+                             <span>P.O.BOX 473-20500<br>
+                             Narok,<br>
+                             Kenya<br>
+                             </span>
+                             </li>
+                             <li>
+                                 <span> <li><img src="https://s.svgbox.net/social.svg?ic=gmail&fill=000000" width="32" height="32"></span>
+                                 <span>trippleseeltd@gmail</span>
+                             </li>
+                             <li>
+                                 <span><img src="https://s.svgbox.net/hero-solid.svg?ic=phone&fill=000000" width="32" height="32"></span>
+                                 <span>
+                                     Phone:+254710424627<br>
+                                     +254743617658.
+                                 </span>
+                             </li>
+                         </ul>
+                         <ul class="sci">
+                     <li><a href="https://www.twitter.com/"><img src="https://s.svgbox.net/social.svg?ic=twitter&fill=000000" width="32" height="32"></a></li>
+                     <li><a href="https://t.me/jonnfrancis"><img src="https://s.svgbox.net/social.svg?ic=telegram&fill=000000" width="32" height="32"></a></li>
+                     <li><a href="https://www.pinterest.com"><img src="https://s.svgbox.net/social.svg?ic=pinterest&fill=000000" width="32" height="32"></a></li>
+                     <li><a href="mailto:trippleseeltd@gmail"><img src="https://s.svgbox.net/social.svg?ic=gmail&fill=000000" width="32" height="32"></a></li>
+                     <li><a href="https://www.instagram.com/"><img src="https://s.svgbox.net/social.svg?ic=instagram&fill=000000" width="32" height="32"></a></li>
+                     <li><a href="https://www.facebook.com/"><img src="https://s.svgbox.net/social.svg?ic=facebook&fill=000000" width="32" height="32"></a></li>
+
+                         </ul>
+                     </div>
+                 </div>
+                 
+                 <div class="contactForm" id="hidden-phone">
+                     <h2>Send a Message</h2>
+                     <div class="formBox">
+                        <form name="comments" netlify>
+                         <div class="inputBox w50">
+                             <input type="text" name="First" required>
+                             <span>First Name</span>
+                         </div>
+                         <div class="inputBox w50">
+                             <input type="text" name="Last" required>
+                             <span>Last Name</span>
+                         </div>
+                         <div class="inputBox w50">
+                             <input type="text" name="Number" required>
+                             <span>Mobile Number</span>
+                         </div>
+                         <div class="inputBox w50">
+                             <input type="text" name="Email" required>
+                             <span>Email Address</span>
+                         </div>
+                         <div class="inputBox w100">
+                             <textarea name="Text" required></textarea>
+                             <span>Write your text here...</span>
+                         </div>
+                         <div class="inputBox w50">
+                             <input type="submit" value="send">
+
+                         </div>
+                        </form>
+
+                     </div>
+                 </div>
+                
+             </div>
+             </section>
+             <footer>
+
+             </div>
+             </footer>
+    </form>
+   
+
+
+
+ </body>
+ </html>
